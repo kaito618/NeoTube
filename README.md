@@ -1,2 +1,2 @@
 # NeoTube
-A YouTube copycat without scc
+A YouTube copycat without css
