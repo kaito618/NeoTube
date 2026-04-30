@@ -13,19 +13,19 @@
     <div class="vids">
         <div class="vid" id="vid" link="https://www.youtube.com/watch?v=ksn5yrsC3Wg&pp=0gcJCd8KAYcqIYzv">
             <div class="vid-logo">
-                <img src="https://i.ytimg.com/vi/ksn5yrsC3Wg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDL_nPVvD7QDyRkjL8ulX9vxAa3NQ">
+                <img src="https://youtu.be/ksn5yrsC3Wg?si=BO0sraROfmoLAmT0">
             </div>
             <h4>The disaster i never imagined having to worry about</h4>
             <p>ventasium</p>
         </div>
-        <div class="vid" id="vid" link="https://www.youtube.com/watch?v=O51ckJgAAC8">
+        <div class="vid" id="vid2" link="https://www.youtube.com/watch?v=O51ckJgAAC8">
             <div class="vid-logo">
                 <img src="https://i.ytimg.com/vi/O51ckJgAAC8/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCbdiH4Dz-CusF9G-FpPu9R8tGwYQ">
             </div>
             <h4>Japan's Rise to Global Power | VIC3 The Great Wave</h4>
             <p>lookas et bella</p>
         </div>
-        <div class="vid" id="vid" link="https://www.youtube.com/watch?v=rmxIjPCAp6w&pp=ugUEEgJlbg%3D%3D">
+        <div class="vid" id="vid3" link="https://www.youtube.com/watch?v=rmxIjPCAp6w&pp=ugUEEgJlbg%3D%3D">
             <div class="vid-logo">
                 <img src="https://i.ytimg.com/vi/rmxIjPCAp6w/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCiVwO_-h6LgJd6VznZGQwilNC2Vg">
             </div>
@@ -41,6 +41,14 @@
         })
         document.getElementById("page-swapper").addEventListener("click", function(){
             window.location.href = "page2.html";
+        })
+            document.getElementById("vid2").addEventListener("click", function(){
+            let link = this.getAttribute("link");
+            window.open(link, "_blank");
+        })
+            document.getElementById("vid3").addEventListener("click", function(){
+            let link = this.getAttribute("link");
+            window.open(link, "_blank");
         })
     </script>
 </body>
