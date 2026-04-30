@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoTube</title>
+    
+</head>
+<body>
+    <div>
+        <img src="finallogo.png">
+    </div>
+    <div class="vids">
+        <div class="vid" id="vid" link="https://www.youtube.com/watch?v=cDr_y0kGddA&pp=ugUEEgJlbtIHCQnfCgGHKiGM7w%3D%3D">
+            <div class="vid-logo">
+                <img src="https://i.ytimg.com/vi/cDr_y0kGddA/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1F5AFhepUefm2Ds6hUHMPzG-c6A">
+            </div>
+            <h4>How Math Becomes Difficult</h4>
+            <p>MAKIT</p>
+        </div>
+        <div class="vid" id="vid" link="https://www.youtube.com/watch?v=O51ckJgAAC8">
+            <div class="vid-logo">
+                <img src="https://i.ytimg.com/vi/G5WmBSKHnwI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBg57FoyWSfsoj-dR9MO6pImZVJpA">
+            </div>
+            <h4>Reacreating The Borders of Asia</h4>
+            <p>AdizzPro</p>
+        </div>
+        <div class="vid" id="vid" link="https://www.youtube.com/watch?v=rmxIjPCAp6w&pp=ugUEEgJlbg%3D%3D">
+            <div class="vid-logo">
+                <img src="https://i.ytimg.com/vi/zHz2avGPb8E/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB0GGVIw3a2QScPcAg4Zq36am1LUQ">
+            </div>
+            <h4>Can I beat Sliksong's Room RANDOMIZER/h4>
+            <p>Tu Sowl</p>
+        </div>
+    </div>
+    <button id="page-swapper">page 1</button>
+    <script>
+        document.getElementById("vid").addEventListener("click", function(){
+            let link = this.getAttribute("link");
+            window.open(link, "_blank");
+        });
+        document.getElementById("page-swapper").addEventListener("click", function(){
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
